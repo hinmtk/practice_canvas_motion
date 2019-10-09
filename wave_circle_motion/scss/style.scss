@@ -1,0 +1,26 @@
+@charset "UTF-8";
+@import "reset";
+
+html,body{
+  overflow:hidden;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.content{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom,
+    hsl(347, 60%, 89%),
+    hsl(244, 32%, 77%)
+    );
+  background-size: 100% 100%;
+  //animation: gradAnim 10s ease infinite;
+}
+@keyframes gradAnim {
+  0% { background-position: 50% 0% }
+  50% { background-position: 50% 100% }
+  100% { background-position: 50% 0% }
+}
